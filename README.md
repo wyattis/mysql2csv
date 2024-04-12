@@ -8,8 +8,8 @@ A simple tool to transform queries into a CSV written in Go. Modeled after the `
 Get full usage with `mysql2csv help`
 
 ### Execute a single query
-`./mysql2csv -e "select * from user" testdb > users.csv`
+`mysql2csv -e "select * from user" testdb > users.csv`
 
 ### Execute multiple queries from a file and write to separate files
-`./mysql2csv -o output.%d.csv testdb < queries.sql`
+`mysql2csv -o output.%d.csv testdb < queries.sql`
 
